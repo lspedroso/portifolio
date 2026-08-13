@@ -1,0 +1,153 @@
+:root {
+  --bg: #080808;
+  --text: #f5f5f5;
+  --muted: #9999998f;
+  --accent: #333eb7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+/* Pagina do Hero */
+
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap:4rem;
+}
+
+/* foto hero*/
+.hero-foto{
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border:3px solid var(--accent);
+  padding:8px;
+  box-shadow: 0 0 40px var(--accent);
+}
+/*foto hero*/
+.hero-foto img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-text{
+  max-width: 650px;
+  text-align: center;
+}
+
+/* Hello world */
+
+.hero-greeting {
+  margin: 0 0 1rem;
+
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 800;
+
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+
+  color: var(--accent);
+}
+
+.typing-cursor {
+  display: inline-block;
+
+  margin-left: 4px;
+
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Meu nome */
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+/* Minha função */
+
+.hero-role {
+  margin: 2rem 0 1rem;
+
+  color: var(--muted);
+
+  font-size: 1.3rem;
+}
+
+/* Descrição */
+
+.hero-description {
+  max-width: 550px;
+
+  margin: 0 auto 2rem;
+
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
+/* Botão */
+
+.hero-button {
+  padding: 1rem 2rem;
+
+  border: none;
+  border-radius: 999px;
+
+  background: var(--accent);
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  color:white;
+}
