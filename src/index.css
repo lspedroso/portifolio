@@ -19,7 +19,7 @@ body {
 /* Pagina do Hero */
 
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
 
   display: flex;
   align-items: center;
@@ -133,6 +133,8 @@ body {
 
 .hero-button {
   padding: 1rem 2rem;
+  display:inline-block;
+  text-decoration: none;
 
   border: none;
   border-radius: 999px;
@@ -150,4 +152,69 @@ body {
 .hero-button:hover {
   transform: translateY(-3px);
   color:white;
+}
+
+/*SKILLS*/
+
+.skills {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0 40px;
+  margin-top: 20px;
+}
+
+.skills-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  animation: infiniteScroll 20s linear infinite;
+}
+
+.skills-list {
+  display: flex;
+  align-items: center;
+
+  /* espaço ENTRE cada skill */
+  gap: 80px;
+
+  /* espaço entre o último item e o primeiro da próxima lista */
+  padding-right: 80px;
+
+  flex-shrink: 0;
+}
+
+.skill {
+  width: 120px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.skill svg {
+  width: 75px;
+  height: 75px;
+}
+
+.skill span {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50%));
+  }
 }
