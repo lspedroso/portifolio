@@ -717,3 +717,149 @@ body {
   }
 
 }
+
+/* =========================
+   RESPONSIVIDADE - HOME
+========================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+
+  /* HERO */
+
+  .hero {
+    min-height: auto;
+    padding: 60px 20px 30px;
+    width: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .hero-foto {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-greeting {
+    font-size: clamp(2.8rem, 13vw, 4rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 10vw, 3.5rem);
+    line-height: 1;
+  }
+
+  .hero-role {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.05rem;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 5px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .hero-button {
+    max-width: 100%;
+    padding: 0.9rem 1.5rem;
+  }
+
+
+  /* SKILLS */
+
+  .skills {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 20px 0 35px;
+  }
+
+  .skills-carousel {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .skills-track {
+    width: max-content;
+  }
+
+  .skills-list {
+    gap: 50px;
+    padding-right: 50px;
+  }
+
+  .skill {
+    width: 90px;
+  }
+
+  .skill svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill span {
+    font-size: 14px;
+  }
+}
+
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 400px) {
+
+  .hero {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-foto {
+    width: 170px;
+    height: 170px;
+  }
+
+  .hero-greeting {
+    font-size: 2.6rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-role {
+    font-size: 0.95rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .skills-list {
+    gap: 40px;
+    padding-right: 40px;
+  }
+}
