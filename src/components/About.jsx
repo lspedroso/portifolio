@@ -56,7 +56,7 @@ function About() {
           </p>
 
           <p>
-            Hoje, como estudante de Engenharia de Software, quero continuar
+            Hoje, como estudante de Engenharia de Software na Unibh, quero continuar
             evoluindo na área de tecnologia, aprofundando meus conhecimentos
             em desenvolvimento e construindo projetos que me permitam
             colocar em prática tudo aquilo que venho aprendendo ao longo
